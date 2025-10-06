@@ -1,0 +1,206 @@
+/* Banner Section */
+.banner-with-search {
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 40px;
+}
+
+/* Brand Name */
+.banner-brand {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Banner Content */
+.banner-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+/* Search Form */
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.search-container {
+  display: flex;
+  background: white;
+  border-radius: 50px;
+  padding: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background: transparent;
+  color: #333; /* Makes typed text visible */
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+}
+
+/* Banner Actions */
+.banner-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary, .btn-tertiary {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #667eea;
+}
+
+.btn-tertiary {
+  background-color: #fff;
+  color: #667eea;
+  font-weight: 700;
+}
+
+.btn-tertiary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Login Options */
+.login-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-login-option {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-login-option:hover {
+  background: white;
+  color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-with-search {
+    padding: 60px 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1.1rem;
+  }
+
+  .search-container {
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 10px;
+  }
+
+  .search-input {
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .search-button {
+    border-radius: 15px;
+    justify-content: center;
+  }
+
+  .banner-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary, .btn-secondary, .btn-tertiary {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-with-search {
+    padding: 40px 15px;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
